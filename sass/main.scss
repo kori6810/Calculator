@@ -1,0 +1,151 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html{
+  font-size: 62,5%;
+  font-family: 'Spartan', sans-serif;
+
+}
+body{
+  background-color: #3A4663;
+  font-family: inherit;
+  color: #fff;
+
+}
+
+.container{
+  width: 40rem;
+  // height: 50rem;
+  background-color: inherit;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: 2rem;
+  //////header
+  &__header{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  ////logo
+  &__logo{
+    font-size: 3.2rem;
+    letter-spacing: -0.53px;
+    // color: inherit;
+  }
+  ////theme-box
+  &__theme-box{
+    display: flex;
+    align-items: center;
+  }
+  ///theme-text
+  &__theme-text{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    // color: #fff;
+    margin-right: 1rem;
+  }
+  ///theme changer shapes
+  &__themes{
+    width: 7.1rem;
+    height: 2.6rem;
+    border-radius: 2rem;
+    background-color: #242D44;
+    padding: 0.3rem;
+    position: relative;
+    &2{
+      width: 2rem;
+      aspect-ratio: 1;
+      background-color: #D03F2F;
+      border-radius: 50%;
+    }
+  }
+  &__theme-nums{
+    width: 100%;
+    font-size: 1.2rem;
+    // color: #fff;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -51%;
+    left: 0%;
+    //padding: 0 0.4rem;
+  }
+  ///display numbers
+
+  &__display{
+    height: 8.4rem;
+    width: 100%;
+    // border: 1px solid black;
+    background-color: #181F33;
+    // color: #fff;
+    text-align: right;
+    font-size: 5rem;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+
+  }
+  //////Numbers
+
+  &__action-box{
+    background-color: #242D44;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 1rem 1.5rem;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+
+
+  }
+  &__buttons{
+    background-color: #EAE3DC;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 2.8rem;
+    border: none;
+    //padding: 1rem 0 0;
+    align-self: auto;
+    border-bottom:1px solid black;
+    
+  }
+  .btnReset{
+    grid-column: 1/ span 2;
+    
+    
+  }
+  .btnDel, .btnEqual, .btnReset{
+    //padding: 1.3rem 0 0;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #647198;
+    
+  }
+  .btnEqual{
+
+    grid-column: 3 / span 2;
+    background-color: #D03F2F;
+  }
+}
+
+
+
+
+
+
+/////Java SCRIPT
+
+.dot-theme2{
+  margin-left: 2rem
+}
+.dot-theme3{
+  margin-left: 4.5rem;
+}
